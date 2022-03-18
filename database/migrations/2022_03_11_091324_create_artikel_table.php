@@ -18,7 +18,7 @@ class CreateArtikelTable extends Migration
             $table->foreignId('kategori_id');
             $table->string('judul_kategori');
             $table->string('isi_artikel');
-            $table->string('gambar_artikel');
+            $table->longText('gambar_artikel');
             $table->timestamps();
         });
     }
